@@ -11,6 +11,14 @@ body {
 	color: #d65845;
 }
 
+p.introducao, p.texto1, div.nome {
+	font-weight: bold;
+}
+
+div.nome {
+	font-family: Arial, sans-serif;
+}
+
 .cabecalho {
 	margin: 20px;
 	padding: 20px;
@@ -25,20 +33,71 @@ body {
 }
 
 .nome {
-	display: inline;
+	display: inline-block;
 	text-align: center;
 }
 
 #cabecalho-info {
 	margin: 20px;
-	width: 80em;
+	width: 70em;
 	text-align: center;
 	float: left;
+}
+
+#espaco-about, #espaco-scheduling, #espaco-pricing, #espaco-more, #espaco-sign-in {
+	display: inline;
+}
+
+#espaco-about{
+	margin-right: 2em;
+}
+
+#espaco-scheduling{
+	margin-right: 2em;
+}
+
+#espaco-pricing{
+	margin-right: 2em;
+}
+
+#espaco-sign-in{
+	margin-right: 4em;
+}
+
+.botao-try {
+	background-color: white;
+	border-style: solid;
+	border-color: #d65845;
+	border-radius: 10px;
+	text-align: center;
+	text-decoration: none;
+	font-weight: bold;
+	display: inline-block;
+	padding: 1em 2em;
+	cursor: pointer;
 }
 
 #cabecalho-cadastro {
 	margin: 20px;
 	float: left;
+}
+
+.cabecalho-info, .cabecalho-cadastro {
+	font-family: Arial, sans-serif;
+	font-weight: 600;
+}
+
+a:link, a:visited {
+	text-decoration: none;
+	color: black;
+}
+
+a:hover {
+	color: #f00;
+}
+
+a:active {
+	text-decoration: none;
 }
 
 div.conteudo-principal {
@@ -50,31 +109,76 @@ div.conteudo-principal {
 }
 
 .conteudo {
-	width: 40em;
-	padding-top: 20em;
+	width: 45em;
+	padding-top: 17em;
 	padding-left: 5em;
 	float: left;
-	border-style: solid;
 }
 
 .introducao {
 	font-family: Arial, sans-serif;
-	font-size: 130%
+	font-size: 150%;
+	color:black;
 }
 
 .texto1 {
 	font-family: Arial, sans-serif;
-	font-size: 300%
+	font-size: 350%;
+	color:black;
 }
 
 .texto2 {
 	font-family: Optima, sans-serif;
-	font-size: 130%
+	font-size: 150%;
+	color:black;
+}
+
+div.input-email {
+	background-color: white;
+	width: 30em;
+	height: 4em;
+	border-radius: 10px
+}
+
+input {
+	border: none;
+	border-radius: 10px;
+	font-size: 20px;
+	text-align: center;
+	margin-top: 18px;
+	width: 16em;
+}
+
+input:focus {
+	box-shadow: 0 0 0 0;
+	border: 0 none;
+	outline: 0;
+}
+
+.botao-get-started {
+	float: right;
+	background-color: #d65845;
+	color: white;
+	text-decoration: none;
+	text-align: center;
+	padding: 1em 2em;
+	border: none;
+	border-radius: 5px;
+	margin-top: 6.5px;
+	margin-right: 5px;
+	font-size: 1em;
+}
+
+.botao-get-started:focus {
+	box-shadow: 0 0 0 0;
+	border: 0 none;
+	outline: 0;
 }
 
 img {
-	width: 60%;
-	height: 60em;
+	width: 52%;
+	height: 52em;
+	margin-right: 2em;
 	float: right;
 }
 
